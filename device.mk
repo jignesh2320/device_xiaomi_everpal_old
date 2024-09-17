@@ -25,6 +25,9 @@ $(call inherit-product-if-exists, vendor/xiaomi/dolby/miuidolby.mk)
 # MIUI Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
+#bcr
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Silence vendor logspam
 include $(LOCAL_PATH)/configs/props/vendor_logtags.mk
 
